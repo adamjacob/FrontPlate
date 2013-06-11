@@ -1,0 +1,1 @@
+var require;require.config({paths:{jquery:"lib/jquery",underscore:"lib/underscore",backbone:"lib/backbone",text:"lib/text"},shim:{underscore:{exports:"_"},backbone:{deps:["jquery","underscore"],exports:"Backbone"}}});require(["app"],function(e){return e.init()});

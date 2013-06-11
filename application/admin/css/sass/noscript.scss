@@ -1,0 +1,25 @@
+noscript {
+
+	// Typography
+	font-size:1em;
+	color:#FFF;
+	text-align:center;
+	font-weight:300;
+
+	// Sizing
+	width: 250px; height: 72px;
+	padding: 15px;
+
+	// Color
+	background-color:$stand-alone-bg;
+
+	// Placement
+	position:absolute;
+	top: 50%; left:50%;
+	margin-left: -125px;
+	margin-top: -36px;
+
+	// Other
+	border-radius: 5px;
+
+}

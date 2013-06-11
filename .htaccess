@@ -1,0 +1,13 @@
+RewriteEngine on
+Options +FollowSymLinks
+
+# Route admin to the /admin
+RewriteRule ^admin/(.*)$ /application/admin/ [L]
+RewriteRule ^admin/page/(.*)$ /application/admin/ [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Route all to the router
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+

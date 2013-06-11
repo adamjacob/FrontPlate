@@ -1,0 +1,12 @@
+
+// Keyframe Animation Helper
+// https://gist.github.com/freshyill/3800217
+// by Chris Coleman : https://gist.github.com/freshyill
+@mixin keyframes($name) {
+  @-moz-keyframes #{$name}    { @content; }
+  @-webkit-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name}      { @content; }
+  @-ms-keyframes #{$name}     { @content; }
+  @-khtml-keyframes #{$name}  { @content; }
+  @keyframes #{$name}         { @content; }
+}

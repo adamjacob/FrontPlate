@@ -1,0 +1,23 @@
+
+// Loading animation keyframes
+@include keyframes(loadingAnimation) {
+  from { opacity:0.8; }
+    to { opacity:0.2; }
+}
+
+@include keyframes(boxNoShake) {
+
+  0% { @include prefixer(transform, translateX(0px), webkit moz ms o); }
+  25% { @include prefixer(transform, translateX(50px), webkit moz ms o); }
+  50% { @include prefixer(transform, translateX(-50px), webkit moz ms o); }
+  75% { @include prefixer(transform, translateX(50px), webkit moz ms o); }
+  100% { @include prefixer(transform, translateX(0px), webkit moz ms o); }
+
+}
+
+@include keyframes(fadeUp) {
+
+  0% { @include prefixer(transform, translateY(50px), webkit moz ms o); opacity: 0; }
+  100% { @include prefixer(transform, translateX(0px), webkit moz ms o); opacity: 1; }
+
+}

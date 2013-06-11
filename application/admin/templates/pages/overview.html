@@ -1,0 +1,9 @@
+<ul class="content-list">
+ <%
+    _.each(pages,function(page){
+%>
+    <li><%= page.attributes.title %></li>
+<%
+    });
+%>
+</ul>

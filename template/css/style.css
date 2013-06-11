@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+body {
+  margin: 0px;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+header {
+  background-color: #F35C53;
+  padding: 15px 40px 15px 40px;
+  color: #FFF; }
+
+section {
+  padding: 35px 40px 35px 40px; }
+
+h1 {
+  font-weight: 300;
+  font-size: 28pt;
+  margin: 0px;
+  padding: 0px; }
+
+p {
+  font-size: 11pt;
+  line-height: 20pt; }
