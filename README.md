@@ -12,3 +12,13 @@ Note: *This project is in heavy development*
 
 ### Contributing
 Anyone and everyone welcome! Send me pull requests, or even just logging bugs for me! Any contribution to this project is much appreciated at this point.
+
+### Major Todo Items
+- Media section, upload/delete, attach to pages
+- Template helpers, navigation rendering functions etc
+- Admin settings, site title, add/delete/edit accounts etc
+- Subpages/multi-level site structure, an reordering of that
+- Support for 3rd party plugins
+- Build/Style out installer
+- Automatic update system for core, an eventually plugins
+- Many, many more things!
