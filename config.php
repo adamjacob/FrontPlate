@@ -23,3 +23,5 @@
 		// This will be an array of files within the /template dir,
 		// that you wish to be autoloaded (after) the template.
 		$frontplate_config->autoload_after = array('/parts/footer.php');
+
+		$frontplate_config->request_root = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

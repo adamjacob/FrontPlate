@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !admin
+
+# Route all to the router
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]

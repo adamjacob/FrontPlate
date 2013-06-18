@@ -1,19 +1,21 @@
 <?php
 
+	$rootDir = dirname(__FILE__);
+
 	require 'config.php';
 
 	// Hold up! Is the app installed yet?
-	if( !file_exists('application/common/database.sqlite3')){
+	if( !file_exists($rootDir . '/common/database.sqlite3')){
 
 		// Not installed...to the installer we go...
-		header('Location: /application/install.php');
+		header('Location: install.php');
 
 		die;
 
 	}
 
 	// Load in out common classes
-	require 'application/common/classes/db.class.php';
+	require $rootDir . '/common/classes/db.class.php';
 
 	// Request method
 	$method = $_SERVER['REQUEST_METHOD'];
@@ -47,26 +49,26 @@
 				}
 
 		// See if the template exists
-		if( file_exists('template/'.$page->template.'.php')){
+		if( file_exists($rootDir . '/template/'.$page->template.'.php')){
 
 			if($frontplate_config->autoload == true){
 
 				foreach ($frontplate_config->autoload_before as $value) {
 					
-					include 'template/'.$value;
+					include $rootDir . '/template/'.$value;
 
 				}
 
 			}
 
 			// Yup! Include it...
-			include 'template/'.$page->template.'.php';
+			include $rootDir . '/template/'.$page->template.'.php';
 
 			if($frontplate_config->autoload == true){
 
 				foreach ($frontplate_config->autoload_after as $value) {
 					
-					include 'template/'.$value;
+					include $rootDir . '/template/'.$value;
 
 				}
 
@@ -78,7 +80,7 @@
 			//header("HTTP/1.0 404 Not Found");
 			//die;
 
-			echo 'No: '.'template/'.$page->template.'.php';
+			echo 'No: '.'/template/'.$page->template.'.php';
 
 		}
 
