@@ -3,7 +3,7 @@ Note: *This project is in heavy development*
 
 ### Technical Info
 - This CMS uses a PHP PDO to a SQLite database stored at /common/database.sqlite3
-- The admin panel is built using Backbone.js an use Require.js to load in environment modules 
+- The admin panel is built using Backbone.js as well as Require.js to load in environment modules 
 
 ### Installing
 1. Move all the files to the proper location in your development environment (htdocs)
